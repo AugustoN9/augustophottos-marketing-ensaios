@@ -1,0 +1,74 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #0b2d20;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 100vh;
+}
+.main-container {
+  width: 100%;
+  max-width: 480px;
+  background: #0b2d20;
+  position: relative;
+  padding-bottom: 58px; /* Altura exata da barra para eliminar vãos */
+}
+.main-container img {
+  width: 100%;
+  height: auto;
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+/* Barra de botões fixa, lado a lado em qualquer tela */
+.action-bar {
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  max-width: 480px;
+  z-index: 1000;
+  display: flex !important;
+  flex-direction: row !important; /* Sempre lado a lado */
+  border-top: 1px solid rgba(255, 255, 255, 0.15);
+  box-shadow: 0 -4px 15px rgba(0, 0, 0, 0.5);
+  margin: 0;
+  padding: 0;
+}
+.btn-custom {
+  flex: 1 !important; /* Divide o espaço meio a meio rigorosamente */
+  padding: 12px 5px;
+  font-size: 15px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  color: #ffffff !important;
+  text-decoration: none !important; /* Remove o sublinhado */
+  border: none;
+  border-radius: 0 !important;
+  transition: opacity 0.2s;
+  white-space: nowrap;
+}
+.btn-custom:hover,
+.btn-custom:focus {
+  color: #ffffff !important;
+  text-decoration: none !important;
+  opacity: 0.9;
+}
+.btn-whatsapp {
+  background-color: #1ebe57;
+}
+.btn-instagram {
+  background-color: #3b82f6;
+}
+.btn-custom img {
+  width: 22px;
+  height: 22px;
+  object-fit: contain;
+  margin: 0;
+}
